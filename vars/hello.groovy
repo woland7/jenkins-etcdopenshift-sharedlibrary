@@ -1,3 +1,3 @@
-def hello(args) {
-    sh "pwd"
+def hello(name) {
+    echo "hello ${name}"
 }
