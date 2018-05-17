@@ -1,3 +1,3 @@
-def ciao(args) {
+def call(args) {
     echo "ciao"
 }
