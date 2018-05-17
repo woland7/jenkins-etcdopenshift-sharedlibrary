@@ -1,3 +1,3 @@
 def hello(args) {
-    echo "hello ${args}"
+    echo "hello"
 }
