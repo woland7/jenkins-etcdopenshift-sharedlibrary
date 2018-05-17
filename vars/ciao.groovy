@@ -1,3 +1,3 @@
 def call(args) {
-    echo "ciao"
+    sh "pwd"
 }
