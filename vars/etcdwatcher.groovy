@@ -1,4 +1,5 @@
 def watchPodReadyState(namespace, pod) {
+    echo "Hello Antonio"
     sh "Watch ready state of $pod"
     sh "curl 192.168.10.31:80/etcdhelper -o etcdwatcher"
     sh "chmod +x ./etcdwatcher"
