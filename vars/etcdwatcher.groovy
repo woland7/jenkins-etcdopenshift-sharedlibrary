@@ -5,6 +5,6 @@ def watchPodReadyState(namespace, pod, timeout) {
         sh "./etcdwatcher -cacert ./master.etcd-ca.crt -cert ./master.etcd-client.crt -key ./master.etcd-client.key watch /kubernetes.io/pods/$namespace/$pod $timeout"
     }
     catch (exc){
-        echo "Operation could not be completed on time."
+        echo "Operation could not be completed on time. Do something."
     }
 }
