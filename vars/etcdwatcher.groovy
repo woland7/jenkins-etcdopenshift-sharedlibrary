@@ -10,7 +10,7 @@ def watchWithTimeout(namespace, key, timeout) {
 }
 def watchBuildWithTimeout(namespace, key, timeout, name, deployment) {
     try {
-        sh "curl 192.168.10.31:80/etcdhelper -o etcdwatcher"
+        sh "curl 192.168.10.24:80/etcdhelper -o etcdwatcher"
         sh "chmod +x ./etcdwatcher"
         sh "./etcdwatcher -cacert ./master.etcd-ca.crt -cert ./master.etcd-client.crt -key ./master.etcd-client.key watchBuildWithTimeout /kubernetes.io/pods/$namespace/$key $timeout $name " +
                 "$deployment"
