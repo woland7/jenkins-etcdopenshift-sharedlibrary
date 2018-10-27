@@ -1,5 +1,5 @@
 def downloadEtcdWatcher(){
-    sh "curl 192.168.10.36:80/etcdwatcher -o etcdwatcher"
+    sh "curl 192.168.10.18:80/etcdwatcher -o etcdwatcher"
     sh "chmod +x ./etcdwatcher"
 }
 
