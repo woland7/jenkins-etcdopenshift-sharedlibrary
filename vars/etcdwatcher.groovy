@@ -1,5 +1,5 @@
 /**
- * This groovy file contains the shared library to use the etcdwatcher primitve in Jenkins.
+ * This groovy file contains the shared library to use the etcdwatcher primitive in Jenkins.
  * Address is local the testing cluter. It should be changed accordingly. However, it is just
  * a workaround. A better solution should be devised.
  *
