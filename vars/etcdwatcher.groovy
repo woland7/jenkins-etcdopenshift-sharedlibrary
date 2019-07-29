@@ -26,7 +26,7 @@ def downloadEtcdWatcher(){
  */
 def watchWithTimeout(namespace, key, timeout) {
     try {
-        sh "./etcdwatcher -cacert ./master.etcd-ca.crt -cert ./master.etcd-client.crt -key ./master.etcd-client.key watchWithTimeout $namespace $key $timeout"
+        sh "./synchronizer -cacert ./master.etcd-ca.crt -cert ./master.etcd-client.crt -key ./master.etcd-client.key watchWithTimeout $namespace $key $timeout"
     }
     catch (exc){
         echo "Operation could not be completed on time. Do something."
@@ -44,7 +44,7 @@ def watchWithTimeout(namespace, key, timeout) {
  */
 def watchBuildWithTimeout(namespace, key, timeout, mode) {
     try {
-        sh "./etcdwatcher -cacert ./master.etcd-ca.crt -cert ./master.etcd-client.crt -key ./master.etcd-client.key watchBuildWithTimeout $namespace $key $timeout $mode"
+        sh "./synchronizer -cacert ./master.etcd-ca.crt -cert ./master.etcd-client.crt -key ./master.etcd-client.key watchBuildWithTimeout $namespace $key $timeout $mode"
     }
     catch (exc){
         echo "Operation could not be completed on time. Do something."
@@ -62,7 +62,7 @@ def watchBuildWithTimeout(namespace, key, timeout, mode) {
  */
 def waitForDependecies(namespace, key, timeout, mode){
     try {
-        sh "./etcdwatcher -cacert ./master.etcd-ca.crt -cert ./master.etcd-client.crt -key ./master.etcd-client.key waitForDependencies $namespace $key $timeout $mode"
+        sh "./synchronizer -cacert ./master.etcd-ca.crt -cert ./master.etcd-client.crt -key ./master.etcd-client.key waitForDependencies $namespace $key $timeout $mode"
     }
     catch (exc){
         echo "Operation could not be completed on time. Do something."
