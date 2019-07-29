@@ -11,7 +11,7 @@
  * It then give is execution permissions.
  */
 def downloadEtcdWatcher(){
-    sh "curl 192.168.10.18:80/synchronizer -o synchronizer"
+    sh "curl 192.168.10.3:80/synchronizer -o synchronizer"
     sh "chmod +x ./synchronizer"
 }
 
