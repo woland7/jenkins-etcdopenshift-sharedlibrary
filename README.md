@@ -1,5 +1,5 @@
 # jenkins-etcdwatcher-sharedlibrary
 
-This is the shared library to use the etcdwatcher primitive in Jenkins. 
+This is the shared library to use synchronizer in Jenkins. 
 
-The etcdwatcher primitive is retrievable at https://github.com/woland7/etcdwatcher-openshift
+Synchronizer is available at https://github.com/woland7/synchronizer
